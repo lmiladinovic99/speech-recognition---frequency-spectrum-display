@@ -2,7 +2,7 @@
 
 Implement a tool that displays the frequency spectrum of a pre-recorded word. It is allowed to use a ready-made implementation of the DFT algorithm, as well as reading .wav headers.
 
-# Entrance
+# Input
 The tool must provide the following items at the input:
 - Using a raw .wav file as input sound. There is one word spoken on the recording, but it is possible that there is silence of arbitrary length before and after the word. This silence should be cut before processing begins. The system should report an error message if it considers that there are no spoken words in the recording.
 - Choice of Triangle, Hamming, Hanning, Blackman, or any window function.
@@ -15,7 +15,7 @@ Provide at least five .wav files for testing, each a few seconds long:
 - Random noise (to check for an error message).
 - Generated signal containing several selected harmonics (write a simple program to generate this signal).
 
-# Exit
+# Output
 The tool must be able to display the frequency spectrum in two ways:
 - Display the entire signal from the .wav file and the marked location of the beginning and end of the word.
 - Display of the frequency spectrum for one window, where the spectrum is displayed as a histogram.
